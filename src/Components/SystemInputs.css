@@ -1,0 +1,52 @@
+.CreateBtn button {
+  border: none;
+  padding: 12px 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.CreateBtn button:hover {
+  background: linear-gradient(135deg, #8e24aa, #6a1b9a);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #80cbc4;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+form input:focus {
+  border-color: #009688;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+p.validation-message {
+  display: inline-block; /* Adjust width to fit content */
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  font-size: 14px; /* Adjust text size */
+  font-weight: bold; /* Make it stand out */
+  padding: 8px 12px; /* Add padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative; /* For decorative triangle */
+}
+
+p.validation-message::after {
+  content: ""; /* Decorative element */
+  position: absolute;
+  top: 100%; /* Below the element */
+  left: 10px; /* Adjust horizontal alignment */
+  width: 10px;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f44336 transparent transparent transparent; /* Triangle color */
+}
