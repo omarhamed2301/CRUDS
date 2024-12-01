@@ -28,25 +28,25 @@ form input:focus {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 p.validation-message {
-  display: inline-block; /* Adjust width to fit content */
-  background-color: #f44336; /* Red background */
-  color: white; /* White text */
-  font-size: 14px; /* Adjust text size */
-  font-weight: bold; /* Make it stand out */
-  padding: 8px 12px; /* Add padding for better spacing */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  position: relative; /* For decorative triangle */
+  display: inline-block;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  font-weight: bold; 
+  padding: 8px 12px; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative; 
 }
 
 p.validation-message::after {
-  content: ""; /* Decorative element */
+  content: "";
   position: absolute;
-  top: 100%; /* Below the element */
-  left: 10px; /* Adjust horizontal alignment */
+  top: 100%; 
+  left: 10px;
   width: 10px;
   height: 0;
   border-width: 5px;
   border-style: solid;
-  border-color: #f44336 transparent transparent transparent; /* Triangle color */
+  border-color: #f44336 transparent transparent transparent;
 }
